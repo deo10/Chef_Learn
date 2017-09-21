@@ -1,0 +1,3 @@
+I, [2017-09-07T15:49:06.223655 #21867]  INFO -- default-centos-72: -----> Destroying <default-centos-72>...
+I, [2017-09-07T15:49:06.384108 #21867]  INFO -- default-centos-72: EC2 instance <i-0dcb14235275e3b14> destroyed.
+I, [2017-09-07T15:49:06.384791 #21867]  INFO -- default-centos-72: Finished destroying <default-centos-72> (0m0.16s).

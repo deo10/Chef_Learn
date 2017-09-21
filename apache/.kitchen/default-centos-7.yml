@@ -1,0 +1,5 @@
+---
+server_id: i-079fe3a0b2f238f4e
+hostname: ec2-34-203-248-186.compute-1.amazonaws.com
+last_action: create
+last_error: RuntimeError

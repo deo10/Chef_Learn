@@ -1,0 +1,42 @@
+
+driver:
+  name: ec2
+  aws_ssh_key_id: kitchen
+  security_group_ids: ["sg-2e8c3b5e"]
+  region: us-east-1
+  availability_zone: d
+  require_chef_omnibus: true
+  subnet_id: subnet-8b5cc3c3
+  instance_type: t2.micro
+  associate_public_ip: true
+  interface: dns
+
+transport:
+  ssh_key: ~/.ssh/kitchen.pem
+  username: ec2-user
+
+provisioner:
+  name: chef_solo
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: linux
+    driver:
+      image_id: ami-a4c7edb2
+    block_device_mappings:
+      - device_name: /dev/xvda
+        ebs:
+         volume_type: gp2
+         volume_size: 8
+         delete_on_termination: true
+
+suites:
+  - name: default
+    run_list:
+        - recipe[apache::server]
+    verifier:
+        inspec_tests:
+        - test/recipes/server.rb
+    attributes:

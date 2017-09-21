@@ -1,0 +1,3 @@
+I, [2017-09-20T15:33:23.763621 #3899]  INFO -- Kitchen: -----> Starting Kitchen (v1.17.0)
+I, [2017-09-20T15:33:27.114325 #3899]  INFO -- Kitchen: -----> Destroying <default-linux>...
+I, [2017-09-20T15:33:27.266852 #3899]  INFO -- Kitchen: -----> Kitchen is finished. (0m3.50s)
