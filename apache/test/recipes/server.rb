@@ -12,8 +12,8 @@ unless os.windows?
   end
 end
 
-describe package('httpd') do
-  it { should be_installed }
+describe user('web_admin') do
+    it { should exist }
 end
 
 describe service('httpd') do

@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'all_rights'
 description 'Installs/Configures apache'
 long_description 'Installs/Configures apache'
-version '0.2.0'
+version '0.3.0'
 issues_url 'https://github.com/deo10/Chef_Learn/issues' if respond_to?(:issues_url)
 source_url 'https://github.com/deo10/Chef_Learn' if respond_to?(:source_url)
 
